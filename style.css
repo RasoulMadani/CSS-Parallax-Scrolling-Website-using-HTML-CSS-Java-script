@@ -17,13 +17,14 @@ body{
         width: 100%;
         padding: 30px 100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         z-index: 100;
         >.logo{
             font-style: 2em;
             color: #359381;
             pointer-events: none;
+            margin-right: 270px;
         }
         >.navigation{
             >a{
@@ -43,6 +44,43 @@ body{
                     background: #359381;
                     color: white;
                 }
+        }
+    }
+    >.parallax{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        >#text{
+            position: absolute;
+            font-size: 5em;
+            color:#fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+        }
+        >img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* bottom: 0; */
+            width: 100%;
+            pointer-events: none;
+            /* height: 100%; */
+        }
+    }
+    >.sec{
+        position: relative;
+        background: #003329;
+        padding: 100px;
+        >h2{
+            font-size: 3em;
+            color: white;
+            margin-bottom: 10px;
+        }
+        >p{
+            font-size: 1em;
+            color: white;
+            font-weight: 300;
         }
     }
 }
